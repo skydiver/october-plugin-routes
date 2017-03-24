@@ -1,0 +1,25 @@
+fields:
+
+    type:
+        label     : martin.redirect::lang.fields.redirects.type.label
+        type      : dropdown
+        required  : true        
+        showSearch: false
+        options   :
+            redirect: martin.redirect::lang.fields.redirects.type.options.redirect
+            content : martin.redirect::lang.fields.redirects.type.options.content
+
+    from:
+        label   : martin.redirect::lang.fields.redirects.from
+        type    : text
+        required: true
+
+    to:
+        label   : martin.redirect::lang.fields.redirects.to
+        type    : text
+        required: true
+
+    active:
+        label  : martin.redirect::lang.fields.redirects.active
+        default: true
+        type   : switch

@@ -1,0 +1,10 @@
+name           : martin.redirect::lang.form.name
+form           : $/martin/redirect/models/redirect/fields.yaml
+modelClass     : Martin\Redirect\Models\Redirect
+defaultRedirect: martin/redirect/redirects
+create:
+    redirect     : 'martin/redirect/redirects/update/:id'
+    redirectClose: martin/redirect/redirects
+update:
+    redirect     : martin/redirect/redirects
+    redirectClose: martin/redirect/redirects

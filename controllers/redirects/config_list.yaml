@@ -1,0 +1,11 @@
+list            : $/martin/redirect/models/redirect/columns.yaml
+modelClass      : Martin\Redirect\Models\Redirect
+title           : Redirects
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup       : true
+showCheckboxes  : true
+recordUrl       : 'martin/redirect/redirects/update/:id'
+toolbar         :
+    buttons: partials/list_toolbar
+    search :
+        prompt: 'backend::lang.list.search_prompt'
