@@ -12,7 +12,7 @@
             Schema::create('martin_routes_records', function($table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->string('type'  ,  50)->unique();
+                $table->string('type'  ,  50)->index();
                 $table->string('source', 200)->unique();
                 $table->string('target', 200);
                 $table->boolean('active')->default(1);

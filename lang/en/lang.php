@@ -9,7 +9,7 @@
 
         'navigation' => [
             'label'       => 'Rouctober',
-            'description' => 'Generate your own custom routes',
+            'description' => 'Generate custom routes',
         ],
 
         'controllers' => [

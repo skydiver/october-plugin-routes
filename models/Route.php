@@ -8,8 +8,17 @@
 
         use \October\Rain\Database\Traits\Validation;
 
-        public $rules = [];
         public $table = 'martin_routes_records';
+
+        public $rules = [
+            'type'   => 'required',
+            'source' => 'required',
+            'target' => 'required|route_content',
+        ];
+
+        public $customMessages = [
+            'route_content' => 'The :attribute file doesn\'t exist.',
+        ];
 
     }
 
