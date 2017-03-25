@@ -4,6 +4,7 @@
 
     use BackendMenu;
     use Backend\Classes\Controller;
+    use System\Classes\SettingsManager;
 
     class Redirects extends Controller {
 
@@ -17,7 +18,9 @@
 
         public function __construct() {
             parent::__construct();
-            BackendMenu::setContext('Martin.Redirect', 'redirect', 'redirects');
+            //BackendMenu::setContext('Martin.Redirect', 'redirect', 'redirects');
+            BackendMenu::setContext('October.System', 'system', 'settings');
+            SettingsManager::setContext('Martin.Redirect', 'settings');
         }
 
     }
