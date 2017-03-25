@@ -7,7 +7,8 @@
         foreach($routes as $route) {
             \Route::get($route->source, function() use ($route) {
                 if($route->type == 'content') {
-                    return \File::get(base_path($route->target));
+                    return response(\File::get(base_path($route->target)))
+                        ->header('Content-Type', $route->content_type);
                 } else {
                     return \Redirect::to($route->target);
                 }

@@ -19,6 +19,14 @@ fields:
         type    : text
         required: true
 
+    content_type:
+        label   : martin.routes::lang.fields.routes.content_type
+        type    : text
+        trigger :
+            action   : show
+            field    : type
+            condition: value[content]
+
     active:
         label  : martin.routes::lang.fields.routes.active
         default: true

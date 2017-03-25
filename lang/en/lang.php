@@ -25,11 +25,12 @@
 
         'fields' => [
             'routes' => [
-                'type'   => ['label' => 'Type', 'options' => ['redirect' => 'Redirect', 'content' => 'File Content']],
-                'source' => 'Source',
-                'target' => 'Target',
-                'link'   => 'Open link',
-                'active' => 'Active',
+                'type'         => ['label' => 'Type', 'options' => ['redirect' => 'Redirect', 'content' => 'File Content']],
+                'source'       => 'Source',
+                'target'       => 'Target',
+                'content_type' => 'Content-Type',
+                'link'         => 'Open link',
+                'active'       => 'Active',
             ]
         ],
 

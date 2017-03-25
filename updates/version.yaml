@@ -1,3 +1,6 @@
 1.0.0:
     - First version
     - create_table.php
+1.0.1:
+    - Added content type field
+    - content_type_field.php
