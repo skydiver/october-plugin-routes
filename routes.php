@@ -1,19 +1,19 @@
 <?php
 
-    namespace Martin\Redirect;
+    App::before(function($request) {
 
-    use Martin\Redirect\Models\Redirect;
+        $redirects = Martin\Redirect\Models\Redirect::where('active', 1)->get();
 
-    $redirects = new Redirect();
+        foreach($redirects as $redirect) {
+            \Route::get($redirect->from, function() use ($redirect) {
+                if($redirect->type == 'content') {
+                    return file_get_contents(base_path($redirect->to));
+                } else {
+                    return \Redirect::to($redirect->to);
+                }
+            });
+        }
 
-    $redirects->setConnectionResolver($this->app['db']);
-    $redirects->setConnection(\Config::get('database.default'));
-
-    foreach ($redirects->where('active', 1)->get() as $redirect) {
-        \Route::get($redirect->redirect_from, function () use ($redirect) {
-            $content = file_get_contents(base_path($redirect->redirect_to));
-            return $content;
-        });
-    }
+    });
 
 ?>

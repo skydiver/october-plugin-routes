@@ -1,21 +1,33 @@
 columns:
-    id:
-        label: ID
-        type: number
-        searchable: true
+
+    type:
+        label   : martin.redirect::lang.fields.redirects.type.label
+        type    : partial
+        path    : ~/plugins/martin/redirect/models/redirect/partials/_type_column.htm
         sortable: true
-    redirect_from:
-        label: 'Redirect from'
-        type: text
+
+    from:
+        label     : martin.redirect::lang.fields.redirects.from
+        type      : text
         searchable: true
-        sortable: true
-    redirect_to:
-        label: 'Redirect to'
-        type: text
+        sortable  : true
+
+    to:
+        label     : martin.redirect::lang.fields.redirects.to
+        type      : text
         searchable: true
-        sortable: true
-    redirect_active:
-        label: Active
-        type: switch
-        searchable: true
+        sortable  : true
+
+    to_link:
+        label     : martin.redirect::lang.fields.redirects.to_link
+        type      : partial
+        path      : ~/plugins/martin/redirect/models/redirect/partials/_link_column.htm
+        clickable : false
+        sortable  : false
+        searchable: false
+
+    active:
+        label   : martin.redirect::lang.fields.redirects.active
+        type    : partial
+        path    : ~/plugins/martin/redirect/models/redirect/partials/_active_column.htm
         sortable: true
