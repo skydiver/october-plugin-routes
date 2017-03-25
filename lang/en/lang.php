@@ -3,24 +3,22 @@
     return [
 
         'plugin' => [
-            'name'        => 'Redirect',
-            'description' => 'Custom redirects'
+            'name'        => 'Rouctober',
+            'description' => 'Generate custom routes',
         ],
 
         'navigation' => [
-            'label' => 'Redirects',
-            'sideMenu' => [
-                'redirects' => 'Redirects'
-            ]
+            'label'       => 'Rouctober',
+            'description' => 'Generate your own custom routes',
         ],
-        
+
         'form' => [
-            'name'             => 'Redirect',
-            'breadcrumb_label' => 'Redirects',
+            'name'             => 'Route',
+            'breadcrumb_label' => 'Routes',
         ],
-        
+
         'fields' => [
-            'redirects' => [
+            'routes' => [
                 'type'   => ['label' => 'Type', 'options' => ['redirect' => 'Redirect', 'content' => 'File Content']],
                 'source' => 'Source',
                 'target' => 'Target',

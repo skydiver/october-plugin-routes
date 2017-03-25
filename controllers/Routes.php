@@ -1,12 +1,12 @@
 <?php
 
-    namespace Martin\Redirect\Controllers;
+    namespace Martin\Routes\Controllers;
 
     use BackendMenu;
     use Backend\Classes\Controller;
     use System\Classes\SettingsManager;
 
-    class Redirects extends Controller {
+    class Routes extends Controller {
 
         public $implement = [
             'Backend\Behaviors\ListController',
@@ -18,9 +18,8 @@
 
         public function __construct() {
             parent::__construct();
-            //BackendMenu::setContext('Martin.Redirect', 'redirect', 'redirects');
             BackendMenu::setContext('October.System', 'system', 'settings');
-            SettingsManager::setContext('Martin.Redirect', 'settings');
+            SettingsManager::setContext('Martin.Routes', 'settings');
         }
 
     }

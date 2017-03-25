@@ -1,6 +1,6 @@
 <?php
 
-    namespace Martin\Redirect\Updates;
+    namespace Martin\Routes\Updates;
 
     use Schema;
     use October\Rain\Database\Updates\Migration;
@@ -9,7 +9,7 @@
 
         public function up() {
 
-            Schema::create('martin_redirect_records', function($table) {
+            Schema::create('martin_routes_records', function($table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
                 $table->string('type'  ,  50)->unique();
@@ -22,7 +22,7 @@
         }
 
         public function down() {
-            Schema::dropIfExists('martin_redirect_records');
+            Schema::dropIfExists('martin_routes_records');
         }
 
     }

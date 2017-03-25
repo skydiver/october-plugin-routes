@@ -1,0 +1,10 @@
+name           : martin.routes::lang.form.name
+form           : $/martin/routes/models/routes/fields.yaml
+modelClass     : Martin\Routes\Models\Route
+defaultRedirect: martin/routes/routes
+create:
+    redirect     : 'martin/routes/routes/update/:id'
+    redirectClose: martin/routes/routes
+update:
+    redirect     : martin/routes/routes
+    redirectClose: martin/routes/routes

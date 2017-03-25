@@ -1,10 +1,10 @@
-list            : $/martin/redirect/models/redirect/columns.yaml
-modelClass      : Martin\Redirect\Models\Redirect
+list            : $/martin/routes/models/routes/columns.yaml
+modelClass      : Martin\Routes\Models\Route
 title           : Redirects
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup       : true
 showCheckboxes  : true
-recordUrl       : 'martin/redirect/redirects/update/:id'
+recordUrl       : 'martin/routes/routes/update/:id'
 toolbar         :
     buttons: partials/list_toolbar
     search :

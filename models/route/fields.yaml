@@ -1,0 +1,25 @@
+fields:
+
+    type:
+        label     : martin.routes::lang.fields.routes.type.label
+        type      : dropdown
+        required  : true
+        showSearch: false
+        options   :
+            redirect: martin.routes::lang.fields.routes.type.options.redirect
+            content : martin.routes::lang.fields.routes.type.options.content
+
+    source:
+        label   : martin.routes::lang.fields.routes.source
+        type    : text
+        required: true
+
+    target:
+        label   : martin.routes::lang.fields.routes.target
+        type    : text
+        required: true
+
+    active:
+        label  : martin.routes::lang.fields.routes.active
+        default: true
+        type   : switch
