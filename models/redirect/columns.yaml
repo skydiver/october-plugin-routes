@@ -6,20 +6,20 @@ columns:
         path    : ~/plugins/martin/redirect/models/redirect/partials/_type_column.htm
         sortable: true
 
-    from:
-        label     : martin.redirect::lang.fields.redirects.from
+    source:
+        label     : martin.redirect::lang.fields.redirects.source
         type      : text
         searchable: true
         sortable  : true
 
-    to:
-        label     : martin.redirect::lang.fields.redirects.to
+    target:
+        label     : martin.redirect::lang.fields.redirects.target
         type      : text
         searchable: true
         sortable  : true
 
-    to_link:
-        label     : martin.redirect::lang.fields.redirects.to_link
+    link:
+        label     : martin.redirect::lang.fields.redirects.link
         type      : partial
         path      : ~/plugins/martin/redirect/models/redirect/partials/_link_column.htm
         clickable : false

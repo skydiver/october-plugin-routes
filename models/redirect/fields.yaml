@@ -9,13 +9,13 @@ fields:
             redirect: martin.redirect::lang.fields.redirects.type.options.redirect
             content : martin.redirect::lang.fields.redirects.type.options.content
 
-    from:
-        label   : martin.redirect::lang.fields.redirects.from
+    source:
+        label   : martin.redirect::lang.fields.redirects.source
         type    : text
         required: true
 
-    to:
-        label   : martin.redirect::lang.fields.redirects.to
+    target:
+        label   : martin.redirect::lang.fields.redirects.target
         type    : text
         required: true
 

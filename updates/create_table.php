@@ -12,9 +12,9 @@
             Schema::create('martin_redirect_records', function($table) {
                 $table->engine = 'InnoDB';
                 $table->increments('id')->unsigned();
-                $table->string('type',  50)->unique();
-                $table->string('from', 200)->unique();
-                $table->string('to'  , 200);
+                $table->string('type'  ,  50)->unique();
+                $table->string('source', 200)->unique();
+                $table->string('target', 200);
                 $table->boolean('active')->default(1);
                 $table->timestamps();
             });

@@ -21,11 +21,11 @@
         
         'fields' => [
             'redirects' => [
-                'type'    => ['label' => 'Type', 'options' => ['redirect' => 'Redirect', 'content' => 'Content']],
-                'from'    => 'From',
-                'to'      => 'To',
-                'to_link' => 'Open link',
-                'active'  => 'Active',
+                'type'   => ['label' => 'Type', 'options' => ['redirect' => 'Redirect', 'content' => 'File Content']],
+                'source' => 'Source',
+                'target' => 'Target',
+                'link'   => 'Open link',
+                'active' => 'Active',
             ]
         ],
 
