@@ -12,6 +12,12 @@
             'description' => 'Generate your own custom routes',
         ],
 
+        'controllers' => [
+            'routes' => [
+                'title' => 'Routes'
+            ]
+        ],
+
         'form' => [
             'name'             => 'Route',
             'breadcrumb_label' => 'Routes',

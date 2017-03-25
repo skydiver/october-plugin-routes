@@ -1,6 +1,6 @@
 list            : $/martin/routes/models/route/columns.yaml
 modelClass      : Martin\Routes\Models\Route
-title           : Redirects
+title           : martin.routes::lang.controllers.routes.title
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup       : true
 showCheckboxes  : true
