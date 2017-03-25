@@ -1,5 +1,5 @@
 name           : martin.routes::lang.form.name
-form           : $/martin/routes/models/routes/fields.yaml
+form           : $/martin/routes/models/route/fields.yaml
 modelClass     : Martin\Routes\Models\Route
 defaultRedirect: martin/routes/routes
 create:

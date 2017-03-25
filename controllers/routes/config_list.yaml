@@ -1,4 +1,4 @@
-list            : $/martin/routes/models/routes/columns.yaml
+list            : $/martin/routes/models/route/columns.yaml
 modelClass      : Martin\Routes\Models\Route
 title           : Redirects
 noRecordsMessage: 'backend::lang.list.no_records'
