@@ -3,7 +3,7 @@ columns:
     type:
         label   : martin.routes::lang.fields.routes.type.label
         type    : partial
-        path    : ~/plugins/martin/routes/models/routes/partials/_type_column.htm
+        path    : ~/plugins/martin/routes/models/route/partials/_type_column.htm
         sortable: true
 
     source:
@@ -21,7 +21,7 @@ columns:
     link:
         label     : martin.routes::lang.fields.routes.link
         type      : partial
-        path      : ~/plugins/martin/routes/models/routes/partials/_link_column.htm
+        path      : ~/plugins/martin/routes/models/route/partials/_link_column.htm
         clickable : false
         sortable  : false
         searchable: false
@@ -29,5 +29,5 @@ columns:
     active:
         label   : martin.routes::lang.fields.routes.active
         type    : partial
-        path    : ~/plugins/martin/routes/models/routes/partials/_active_column.htm
+        path    : ~/plugins/martin/routes/models/route/partials/_active_column.htm
         sortable: true
